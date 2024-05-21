@@ -76,7 +76,7 @@
 		$("body.light #portfolio-items li a").on('click', function() {
 			$(".cd-stretchy-nav").addClass('lighter-in-portfolio');
 		});
-		
+
 		/* ----------------------------------------------------------- */
         /*  LINK TO ABOUT SECTION
         /* ----------------------------------------------------------- */
@@ -141,11 +141,14 @@
                         $(".output_message").text("Message Sent!");
                     } else {
                         $(".tabs-container").css("height", "440px");
-
                         $(".contactform").find(".output_message").addClass("error");
                         $(".output_message").text("Error Sending!");
                     }
-                }
+                },
+				error: function() {
+					$(".contactform").find(".output_message").addClass("error");
+					$(".output_message").text("Error Sending!");
+				}
             });
 
             return false;
