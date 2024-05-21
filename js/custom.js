@@ -142,7 +142,7 @@
                     } else {
                         $(".tabs-container").css("height", "440px");
                         $(".contactform").find(".output_message").addClass("error");
-                        $(".output_message").text("Error Sending!");
+                        $(".output_message").text("Error Sending!" + result);
                     }
                 },
 				error: function() {
