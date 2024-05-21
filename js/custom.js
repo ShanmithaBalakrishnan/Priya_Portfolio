@@ -76,6 +76,7 @@
 		$("body.light #portfolio-items li a").on('click', function() {
 			$(".cd-stretchy-nav").addClass('lighter-in-portfolio');
 		});
+		
 		/* ----------------------------------------------------------- */
         /*  LINK TO ABOUT SECTION
         /* ----------------------------------------------------------- */
