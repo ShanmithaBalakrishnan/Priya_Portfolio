@@ -2805,11 +2805,11 @@ ul.social-intro li a:hover i {
     width: calc(50% - 36px);
     height: calc(50% - 35px);
     border-radius: 4px;
-    background: #eee;
+    background: #fff;
   }
 
   body.dark .navigation li {
-    background: #fff;
+    background: #fff !important;
   }
 
   .navigation li > div {
