@@ -384,10 +384,6 @@ body.dark .navigation a {
 }
 
 body.dark p{
-  color: #eee;
-}
-
-#selector p{
   color: #111;
 }
 
@@ -1923,7 +1919,7 @@ body.light .personal-info ul h6 {
   line-height: 30px !important;
   margin-bottom: 10px !important;
   font-weight: 400;
-  color: #111;
+  color: #eee !important;
 }
 
 .project-text .btn {
