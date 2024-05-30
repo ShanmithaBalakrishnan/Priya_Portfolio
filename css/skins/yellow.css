@@ -21,24 +21,24 @@ body.dark.blog article a h4:hover,
 .comments-list .comment-reply,
 body.blog.dark .comments-list .comment-reply:hover,
 .contact-container ul.social-intro li a,
-.navigation li a i,
 .resume-items .item .card-header .year i.fa-caret-right,
 .badges h3 span,
-.chart-bar>.percent  {
-	color: #ffb400;
+.chart-bar > .percent {
+  color: #ffb400;
 }
 .cd-stretchy-nav.nav-is-visible ul li.active a,
 .cd-stretchy-nav.nav-is-visible ul li.active a span,
 .cd-stretchy-nav.nav-is-visible ul li a:hover,
 .cd-stretchy-nav.nav-is-visible ul li a:hover span {
-	color: rgb(235, 185, 60) !important;
+  color: rgb(235, 185, 60) !important;
 }
 
 .page-title h2 span,
-.project-info-container .projects-info h3 {
-	color:rgb(239, 168, 63);
+.project-info-container .projects-info h3,
+.navigation li a i {
+  color: rgb(239, 168, 63);
 }
-.chart-bar>.item-progress,
+.chart-bar > .item-progress,
 .navigation li > div a span:after,
 .cd-stretchy-nav ul a::before,
 .nav-container > div > ul li:not(:last-child):hover:after,
@@ -53,7 +53,7 @@ body.dark .carousel-controls,
 #header > div.bg,
 .ah-headline.clip .ah-words-wrapper::after,
 .btn-secondary:not(:disabled):not(.disabled).active,
-.btn-secondary:not(:disabled):not(.disabled):active ,
+.btn-secondary:not(:disabled):not(.disabled):active,
 .btn.btn-secondary:before,
 section#blog .post-date,
 .resume-items .item-label,
@@ -64,41 +64,49 @@ section#blog .post-date,
 .comments-form button:active,
 .back-mobile,
 .page-title .title-head-subtitle:before,
-.page-title .title-head-subtitle:after{
-	background-color: rgb(153,77,28);
-	background: linear-gradient(90deg, rgba(153,77,28,1) 16%, rgba(255,176,0,1) 84%);
+.page-title .title-head-subtitle:after {
+  background-color: rgb(153, 77, 28);
+  background: linear-gradient(
+    90deg,
+    rgba(153, 77, 28, 1) 16%,
+    rgba(255, 176, 0, 1) 84%
+  );
 }
 
 .contact-container ul.social-intro li a,
 .btn.btn-secondary,
 .btn.btn-secondary:focus,
-.chart-bar>.percent {
-	border: 1px solid rgba(255,176,0,1);
+.chart-bar > .percent {
+  border: 1px solid rgba(255, 176, 0, 1);
 }
 
 .arrow {
-	border: 1px solid #ffb400;
-    border-width: 0 1px 1px 0;
+  border: 1px solid #ffb400;
+  border-width: 0 1px 1px 0;
 }
 
 .resume-items .item:before {
-	border-left: 1px solid #ffb400;
+  border-left: 1px solid #ffb400;
 }
 
-.resume-items .item .bullet{
-	border: 2px solid #ffb400;
+.resume-items .item .bullet {
+  border: 2px solid #ffb400;
 }
 
 .personal-info .image-container:before {
-	border: 6px solid;
-	border-color: #333;
+  border: 6px solid;
+  border-color: #333;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active {
-	border-color:rgba(255,176,0,1);
+  border-color: rgba(255, 176, 0, 1);
 }
 
 #portfolio-items li a div {
-	background: linear-gradient(90deg, rgba(153,77,28,1) 16%, rgba(255,176,0,1) 84%);
+  background: linear-gradient(
+    90deg,
+    rgba(153, 77, 28, 1) 16%,
+    rgba(255, 176, 0, 1) 84%
+  );
 }
