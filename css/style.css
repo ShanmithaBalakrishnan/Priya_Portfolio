@@ -241,6 +241,14 @@ body.dark .arrow {
   background: #fff;
 }
 
+@media only screen and (max-width: 1024px) {
+  body.dark .navigation li a {
+    color: #111;
+    background: #fff;
+    border: 3px solid rgb(239, 168, 63);
+    border-radius: 30px;
+  }
+}
 body.dark .preloader::before,
 body.dark .preloader::after {
   background: #fff;
@@ -383,7 +391,7 @@ body.dark .navigation a {
   color: #353535;
 }
 
-body.dark p{
+body.dark p {
   color: #111;
 }
 
@@ -1330,9 +1338,9 @@ div.container.page-title {
 }
 
 .personal-info .personal-info-text p,
-.contact-container .rightside p{
+.contact-container .rightside p {
   color: #111;
-} 
+}
 
 .personal-info p {
   font-family: "Open Sans", sans-serif;
@@ -2588,7 +2596,11 @@ ul.social-intro li a:hover i {
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  background: linear-gradient(90deg, rgba(153,77,28,1) 16%, rgba(255,176,0,1) 84%);
+  background: linear-gradient(
+    90deg,
+    rgba(153, 77, 28, 1) 16%,
+    rgba(255, 176, 0, 1) 84%
+  );
   color: #fff !important;
   text-decoration: none !important;
   font-size: 16px;
@@ -2825,12 +2837,6 @@ ul.social-intro li a:hover i {
 
   main#main {
     z-index: 11111;
-  }
-
-  body.dark .navigation li a {
-    color: #111;
-    border: 3px solid rgb(239, 168, 63);
-    border-radius: 30px;
   }
 
   .navigation li:first-child {
