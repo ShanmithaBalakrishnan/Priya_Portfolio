@@ -1333,6 +1333,11 @@ div.container.page-title {
   }
 }
 
+.personal-info .personal-info-text p,
+.contact-container .rightside p{
+  color: #111;
+} 
+
 .personal-info p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
