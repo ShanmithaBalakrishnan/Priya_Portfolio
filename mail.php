@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "New Contact Form Submission";
     $name = htmlspecialchars($_POST["name"]);
     $email = htmlspecialchars($_POST["email"]);
-    $comment = htmlspecialchars($_POST["comment"]);
+    $message = htmlspecialchars($_POST["message"]);
     
     // Validate email address
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                "Reply-To: " . $email . "\r\n" .
                "Content-Type: text/plain; charset=UTF-8";
 
-    $body = "Name: $name\nEmail: $email\n\nMessage:\n$comment";
+    $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
     
     if (mail($to, $subject, $body, $headers)) {
         echo "success";

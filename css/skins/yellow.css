@@ -6,7 +6,6 @@
 .btn.btn-secondary,
 .page-title h2 span,
 .back-mobile,
-.project-info-container .projects-info h3,
 .meta a,
 .meta i,
 .main-text h1 span,
@@ -32,7 +31,12 @@ body.blog.dark .comments-list .comment-reply:hover,
 .cd-stretchy-nav.nav-is-visible ul li.active a span,
 .cd-stretchy-nav.nav-is-visible ul li a:hover,
 .cd-stretchy-nav.nav-is-visible ul li a:hover span {
-	color: #ffb400 !important;
+	color: rgb(235, 185, 60) !important;
+}
+
+.page-title h2 span,
+.project-info-container .projects-info h3 {
+	color:rgb(239, 168, 63);
 }
 .chart-bar>.item-progress,
 .navigation li > div a span:after,
@@ -61,14 +65,15 @@ section#blog .post-date,
 .back-mobile,
 .page-title .title-head-subtitle:before,
 .page-title .title-head-subtitle:after{
-	background-color: #ffb400;
+	background-color: rgb(153,77,28);
+	background: linear-gradient(90deg, rgba(153,77,28,1) 16%, rgba(255,176,0,1) 84%);
 }
 
 .contact-container ul.social-intro li a,
 .btn.btn-secondary,
 .btn.btn-secondary:focus,
 .chart-bar>.percent {
-	border: 1px solid #ffb400;
+	border: 1px solid rgba(255,176,0,1);
 }
 
 .arrow {
@@ -85,17 +90,15 @@ section#blog .post-date,
 }
 
 .personal-info .image-container:before {
-	border: 6px solid #ffb400;
+	border: 6px solid;
+	border-color: #333;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active {
-	border-color:#ffb400;
+	border-color:rgba(255,176,0,1);
 }
 
-body.blog .container-fluid.page-title .content-banner {
-	border-bottom:8px solid #ffb400;
-}
 #portfolio-items li a div {
-	background: #ffb400;
+	background: linear-gradient(90deg, rgba(153,77,28,1) 16%, rgba(255,176,0,1) 84%);
 }

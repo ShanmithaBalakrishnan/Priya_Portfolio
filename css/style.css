@@ -60,7 +60,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #555;
-  background: #fff;
+  background: #ffffff;
   font-size: 0.9em;
   font-weight: 400;
 }
@@ -136,7 +136,7 @@ h6 {
   height: 102%;
   left: -25%;
   width: 0%;
-  background-color: #555;
+  background-color: #333;
   transform: skew(-22deg);
   transition-duration: 0.6s;
   z-index: 1;
@@ -238,12 +238,12 @@ body.blog.dark,
 body.dark #home .home-content,
 body.dark .carousel-controls,
 body.dark .arrow {
-  background: #222;
+  background: #fff;
 }
 
 body.dark .preloader::before,
 body.dark .preloader::after {
-  background: #111;
+  background: #fff;
 }
 
 body.dark .personal-info h6,
@@ -265,14 +265,18 @@ body.dark .page-title h1,
 body.dark .page-title h2,
 body.dark .contact-container .contact .leftside h6,
 body.dark .title-section {
-  color: #fff;
+  color: #222;
+}
+
+.text-center .title-center-span {
+  color: rgb(239, 168, 63);
 }
 
 body.dark .cd-stretchy-nav ul a,
 body.dark .cd-stretchy-nav ul a span,
 body.light.dark-header .cd-stretchy-nav.lighter ul a span,
 body.light .cd-stretchy-nav.lighter-in-portfolio ul a span {
-  color: rgba(255, 255, 255, 0.9);
+  color: #222;
 }
 
 body.dark .nav-container > div > ul li:not(:last-child):not(:active):after,
@@ -301,7 +305,7 @@ body.dark .contact-container hr {
 }
 
 body.dark #cd-nav ul {
-  background: #333;
+  background: #fff;
 }
 
 body.dark .progress-line {
@@ -309,7 +313,7 @@ body.dark .progress-line {
 }
 
 body.dark .page-title .title-head-subtitle {
-  color: #fff;
+  color: #353535;
   opacity: 0.8;
 }
 
@@ -325,7 +329,7 @@ body.dark .cd-nav-trigger span::after {
 
 body.dark .preloader-container h1,
 body.dark .personal-info h6 {
-  color: #fff;
+  color: #111;
 }
 
 body.dark .cd-nav-trigger.menu-is-open span {
@@ -363,7 +367,7 @@ body.dark .contact-container .contact .rightside form .form-group textarea,
 body.dark .comments-form .form-group input[type="text"],
 body.dark .comments-form .form-group input[type="email"],
 body.dark .comments-form .form-group textarea {
-  background: #333;
+  background: #fff;
   border: 1px solid #444;
   color: #fff;
 }
@@ -372,16 +376,23 @@ body.dark .comments-form .form-group i,
 body.dark .contact-container .contact .rightside form .form-group i,
 body.dark .main-text h3,
 body.light.dark-header .main-text h3,
-body.dark p,
 body.light.dark-header .main-text p,
 body.dark .personal-info ul li,
 body.dark .contact-container .contact .leftside,
 body.dark .navigation a {
+  color: #353535;
+}
+
+body.dark p{
   color: #eee;
 }
 
+#selector p{
+  color: #111;
+}
+
 body.dark .cd-stretchy-nav .stretchy-nav-bg {
-  background: #333;
+  background: #353535;
 }
 
 body.dark .profile-picture img {
@@ -549,7 +560,7 @@ body.dark #loader-wrapper .loader-section {
   margin-top: 0;
   margin-left: -100vw;
   animation-name: progess_animation;
-  animation-duration: 2.5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   width: 100vw;
@@ -1222,7 +1233,7 @@ div.container.page-title {
   height: 100%;
   width: 100%;
   display: table;
-  margin-left: 50vw;
+  margin-left: 45vw;
   max-width: 550px;
 }
 
@@ -1268,7 +1279,8 @@ div.container.page-title {
 
 .ah-headline.clip span b {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
+  color: rgb(239, 168, 63);
 }
 
 .ah-headline.clip .ah-words-wrapper::after {
@@ -1280,7 +1292,7 @@ div.container.page-title {
 }
 
 .call-to-actions-home .text-left {
-  margin-top: 180px;
+  margin-top: 200px;
 }
 
 /* ABOUT
@@ -1587,9 +1599,6 @@ body.light .personal-info ul h6 {
   display: block;
 }
 
-.chart-bar > .percent span:before {
-}
-
 .arrow {
   display: inline-block;
   padding: 4px;
@@ -1604,10 +1613,11 @@ body.light .personal-info ul h6 {
 }
 
 .text-container {
-  padding: 50px;
+  padding-top: 90px;
+  padding-bottom: 50px;
   width: 1300px;
   text-align: center;
-  margin-left: 90px;
+  margin: 0 auto;
 }
 .text-container h1 {
   align-items: center;
@@ -1615,50 +1625,95 @@ body.light .personal-info ul h6 {
 
 .text-container p {
   display: flex;
+  font-size: 16px;
+  line-height: 32px;
   align-items: center;
   text-align: justify;
   padding-left: 70px;
   padding-right: 50px;
 }
 
-@media (min-width: 500px) and (max-width:900px) {
-  .text-container{
-    width: 650px;
-    display: block;
-    padding: 10px;
-    margin: 0px;
-  }
-  .text-container h1 {
-    align-items: center;
-    font-size: 32px;
-  }
-  
-  .text-container p {
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    padding-left: 70px;
-    padding-right: 50px;
-  }
-}
-@media (min-width: 300px) and (max-width:500px) {
-  .text-container{
-    width: 350px;
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .text-container {
+    width: 90%;
     display: block;
     padding: 5px;
-    margin: 0;
+    margin: 0 auto;
+    line-height: 30px;
   }
   .text-container h1 {
     align-items: center;
     font-size: 24px;
   }
-  
+
   .text-container p {
+    width: 100%;
+
     display: flex;
     align-items: center;
     text-align: justify;
-    padding-left: 10px;
-    padding-right: 5px;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .text-container {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .text-container h1 {
+    align-items: center;
+    font-size: 32px;
+  }
+
+  .text-container p {
+    display: flex;
+    align-items: center !important;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .text-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .text-container p {
+    display: flex;
+    align-items: center !important;
+    text-align: justify;
+  }
+}
+
+/* Extra large devices (large desktops, 1305px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1099px) {
+  .text-container {
+    width: 900px !important; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .text-container p {
+    display: flex;
+    align-items: center !important;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .text-container {
+    width: 1000px !important; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .text-container p {
+    display: flex;
+    align-items: center !important;
+    text-align: justify;
   }
 }
 
@@ -1837,7 +1892,7 @@ body.light .personal-info ul h6 {
   text-align: justify;
   line-height: 20px !important;
   margin-bottom: 10px !important;
-  color: #ffb400;
+  color: rgb(239, 168, 63);
   font-size: 1.3rem !important ;
 }
 
@@ -1853,7 +1908,7 @@ body.light .personal-info ul h6 {
   text-align: justify;
   line-height: 20px !important;
   margin-bottom: 10px !important;
-  color: #ffb400 !important;
+  color: rgb(239, 168, 63) !important;
   font-size: 16px !important ;
 }
 
@@ -1863,6 +1918,7 @@ body.light .personal-info ul h6 {
   line-height: 30px !important;
   margin-bottom: 10px !important;
   font-weight: 400;
+  color: #111;
 }
 
 .project-text .btn {
@@ -2141,69 +2197,6 @@ section#blog .meta i {
   margin-bottom: 70px;
 }
 
-/*** Blog Page ***/
-
-body.blog .content {
-  padding: 0 24px;
-  margin: 0 auto;
-  max-width: 700px;
-}
-
-body.blog .btn.back {
-  background: transparent;
-  width: 100%;
-  transition: 0.1s;
-}
-
-body.blog .btn.back:hover {
-  color: #fff;
-}
-
-body.blog {
-  background-color: #fff;
-  overflow: auto;
-}
-
-body.blog .container-fluid.page-title {
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-image: url(../img/blog/banner.jpg);
-  padding: 0;
-  margin-bottom: 60px;
-}
-
-body.blog .container-fluid.page-title .content-banner {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 200px 30px;
-  width: 100%;
-  text-align: center;
-}
-
-body.blog .container-fluid.page-title .content-banner h2,
-body.blog .container-fluid.page-title .meta {
-  color: #fff;
-}
-
-body.blog .container-fluid.page-title .meta {
-  background: rgba(0, 0, 0, 0.6) !important;
-}
-
-body.blog .container-fluid.page-title .content-banner h2 span {
-  color: #fff !important;
-}
-
-.post-title .meta {
-  background: transparent !important;
-}
-
-body.blog .container.page-title h2 {
-  font-size: 55px;
-}
-
-.refresh {
-  margin-bottom: 70px;
-}
-
 /** Posts **/
 
 body.blog article {
@@ -2465,7 +2458,7 @@ ul.social-intro {
 
 .social-intro li {
   display: inline-block;
-  float: left;
+  /* float: left; */
   margin-bottom: 10px;
 }
 
@@ -2588,6 +2581,71 @@ ul.social-intro li a:hover i {
   padding-right: 10px;
 }
 
+/* Style the button */
+.call-btn a {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgba(153,77,28,1) 16%, rgba(255,176,0,1) 84%);
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 16px;
+  margin-bottom: 24px;
+  box-shadow: none !important;
+  border-radius: 26px;
+  font-weight: 500;
+  height: 46px;
+  width: fit-content;
+  display: inline-block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  border: 0;
+}
+
+/* Ensure no text decoration */
+.call-btn a:hover {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+/* Ensure icon and text are centered inside the button */
+.call-btn a span {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+  .call-btn {
+    margin-bottom: 24px;
+    box-shadow: none !important;
+    border-radius: 26px;
+    font-weight: 500;
+    height: 46px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 33px;
+    outline: none !important;
+    display: inline-block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+    border: 0;
+    background-color: #ffb400;
+  }
+  .call-btn a {
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    padding: 0;
+  }
+}
 /* [ RESONSIVE DESIGN STYLES ] */
 /*================================================== */
 @media only screen and (max-width: 1100px) {
@@ -2614,7 +2672,9 @@ ul.social-intro li a:hover i {
     text-align: left;
   }
   .resume-btn-container {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .infos {
     padding: 0 30px 45px 30px;
@@ -2629,6 +2689,12 @@ ul.social-intro li a:hover i {
   .personal-info ul li span {
     display: block;
     padding-right: 0;
+  }
+
+  .resume-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-container > div > ul li.active a {
@@ -3038,7 +3104,7 @@ ul.social-intro li a:hover i {
   }
 
   .personal-info p {
-    margin: 30px 0 25px !important;
+    margin: 30px 0px 25px 25px !important;
   }
 
   .personal-info a.btn {
